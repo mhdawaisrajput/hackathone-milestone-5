@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Milestone 5: Unique Path and Shareable Links By: Muhammad Awais</h1>
+
+    <form id="resumeForm">
+
+        <fieldset>
+            <legend>Personal Information:</legend>
+            <label for="name">Name:</label>
+            <input type="text" placeholder="Enter your name." name="name" id="name"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" placeholder="Enter your email." id="email">
+            <label for="phone">Phone:</label>
+            <input type="tel" name="phone" id="phone" placeholder="Enter phone number."><br><br>
+            
+            <label for="profileimage">Profile Image:</label>
+            <input type="file" id="profileimage" name="profileimage" accept="image/*" >
+       
+        </fieldset>
+
+        <fieldset>
+            <legend>Education:</legend>
+            <label form="experience"></label>
+            <textarea name="education" id="education" rows="4" placeholder="Add education here."></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Experience:</legend>
+            <label form="experience"></label>
+            <textarea name="experience" id="experience" rows="4" placeholder="Add experience here."></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Skills:</legend>
+            <label for="skills"></label>
+            <textarea name="skills" id="skills" rows="4" placeholder="Add skills here."></textarea>
+        </fieldset> <br>
+
+        <button type="submit">Generate Resume Below</button>
+
+    </form>
+
+    <div id="resumeOutput" class="hidden">
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
